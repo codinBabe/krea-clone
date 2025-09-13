@@ -1,12 +1,12 @@
 # Krea Clone
 
-This is a clone of the Krea website, built using Next.js and Tailwind CSS. It features a responsive design, a grid of AI tools, and a hero section with a video background.
+This is a clone of the Krea website, built using Next.js and Tailwind CSS. It features a responsive design, a grid of AI tools, and a hero section with a image background.
 
 ## Features
 
 - Responsive design using Tailwind CSS
 - Grid of AI tools with icons and descriptions
-- Hero section with a video background
+- Hero section with a image background
 - Navigation bar with links to different sections
 - Footer
 
