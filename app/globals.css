@@ -1,26 +1,127 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
+@custom-variant dark (&:is(.dark *));
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+  --radius: var(--radius);
+  --hero-gradient: var(--hero-gradient);
+  --card-gradient: var(--card-gradient);
+  --color-accent-blue: var(--accent-blue);
+  --color-accent-purple: var(--accent-purple);
+  --color-accent-orange: var(--accent-orange);
+  --color-surface-elevated: var(--surface-elevated);
+  --color-text-subtle: var(--text-subtle);
+  --color-navbar-bg: var(--navbar-bg);
+  --color-tool-card-bg: var(--tool-card-bg);
+  --color-gallery-bg: var(--gallery-bg);
+  --font-sans: "Suiss-Regular", sans-serif;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+:root {
+  --radius: 0.625rem;
+  --background: oklch(1 0 0);
+  --foreground: oklch(0.145 0 0);
+  --card: oklch(1 0 0);
+  --card-foreground: oklch(0.145 0 0);
+  --popover: oklch(1 0 0);
+  --popover-foreground: oklch(0.145 0 0);
+  --primary: oklch(0.205 0 0);
+  --primary-foreground: oklch(0.985 0 0);
+  --secondary: oklch(0.97 0 0);
+  --secondary-foreground: oklch(0.205 0 0);
+  --muted: oklch(0.97 0 0);
+  --muted-foreground: oklch(0.556 0 0);
+  --accent: oklch(0.97 0 0);
+  --accent-foreground: oklch(0.205 0 0);
+  --destructive: oklch(0.577 0.245 27.325);
+  --border: oklch(0.922 0 0);
+  --input: oklch(0.922 0 0);
+  --ring: oklch(0.708 0 0);
+
+  --hero-gradient: linear-gradient(
+    135deg,
+    hsl(240 5.9% 10%),
+    hsl(240 3.8% 15%)
+  );
+  --card-gradient: linear-gradient(135deg, hsl(0 0% 100%), hsl(240 4.8% 98%));
+  --accent-blue: oklch(57.9% 0.2497 257.07);
+  --accent-purple: hsl(262 83% 58%);
+  --accent-orange: hsl(25 95% 53%);
+  --surface-elevated: hsl(0 0% 98%);
+  --text-subtle: hsl(240 3.8% 46.1%);
+  --navbar-bg: hsl(0 0% 100%/80%);
+  --tool-card-bg: hsl(0 0% 100%);
+  --gallery-bg: hsl(240 4.8% 98%);
+}
+
+.dark {
+  --background: oklch(0.145 0 0);
+  --foreground: oklch(0.985 0 0);
+  --card: oklch(0.205 0 0);
+  --card-foreground: oklch(0.985 0 0);
+  --popover: oklch(0.205 0 0);
+  --popover-foreground: oklch(0.985 0 0);
+  --primary: oklch(0.922 0 0);
+  --primary-foreground: oklch(0.205 0 0);
+  --secondary: oklch(0.269 0 0);
+  --secondary-foreground: oklch(0.985 0 0);
+  --muted: oklch(0.269 0 0);
+  --muted-foreground: oklch(0.708 0 0);
+  --accent: oklch(0.269 0 0);
+  --accent-foreground: oklch(0.985 0 0);
+  --destructive: oklch(0.704 0.191 22.216);
+  --border: oklch(1 0 0 / 10%);
+  --input: oklch(1 0 0 / 15%);
+  --ring: oklch(0.556 0 0);
+  --hero-gradient: linear-gradient(
+    135deg,
+    hsl(240 3.7% 15.9%),
+    hsl(240 5% 20%)
+  );
+  --card-gradient: linear-gradient(
+    135deg,
+    hsl(240 3.7% 15.9%),
+    hsl(240 5% 18%)
+  );
+  --surface-elevated: hsl(240 3.7% 15.9%);
+  --text-subtle: hsl(240 5% 64.9%);
+  --navbar-bg: hsl(240 10% 3.9%/80%);
+  --tool-card-bg: hsl(240 3.7% 15.9%);
+  --gallery-bg: hsl(240 5% 8%);
+}
+
+@font-face {
+  font-family: "Suiss-Regular";
+  src: url("/fonts/SuisseIntl-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@layer base {
+  * {
+    @apply border-border;
   }
-}
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  body {
+    @apply bg-background text-foreground;
+  }
 }
