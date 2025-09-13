@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { ChevronLeft, ChevronRight } from "lucide-react";
@@ -23,9 +23,10 @@ const slides = [
     title: "FLUX.1 Krea",
     description:
       "We're making the weights to our FLUX.1 Krea model open-source. Download and run our model weights, read the technical report, or generate with it in Krea Image.",
-    button: "Try Open Source",
-    src: "/images/Flux-1.mp4",
+    button: "Read Report",
+    src: "/images/flux-1.mp4",
   },
+
   {
     id: 3,
     type: "image",
@@ -33,7 +34,7 @@ const slides = [
     title: "Seedream 4.0",
     description:
       "Try the brand new and record-breaking image generation model Seedream 4.0 by ByteDance.",
-    button: "Try Seedream 4.0",
+    button: "Start Generating",
     src: "/images/seedream.webp",
   },
 ];
@@ -45,14 +46,6 @@ export function HeroCards() {
     setCurrent((p) => (p === 0 ? slides.length - 1 : p - 1));
   const nextSlide = () =>
     setCurrent((p) => (p === slides.length - 1 ? 0 : p + 1));
-
-  // autoplay every 6s
-  useEffect(() => {
-    const timer = setInterval(() => {
-      setCurrent((p) => (p === slides.length - 1 ? 0 : p + 1));
-    }, 6000);
-    return () => clearInterval(timer);
-  }, []);
 
   return (
     <div className="relative w-full overflow-hidden">

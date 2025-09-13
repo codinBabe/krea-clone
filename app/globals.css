@@ -23,16 +23,6 @@
   --color-input: var(--input);
   --color-ring: var(--ring);
   --radius: var(--radius);
-  --hero-gradient: var(--hero-gradient);
-  --card-gradient: var(--card-gradient);
-  --color-accent-blue: var(--accent-blue);
-  --color-accent-purple: var(--accent-purple);
-  --color-accent-orange: var(--accent-orange);
-  --color-surface-elevated: var(--surface-elevated);
-  --color-text-subtle: var(--text-subtle);
-  --color-navbar-bg: var(--navbar-bg);
-  --color-tool-card-bg: var(--tool-card-bg);
-  --color-gallery-bg: var(--gallery-bg);
   --font-sans: "Suiss-Regular", sans-serif;
 }
 
@@ -56,21 +46,6 @@
   --border: oklch(0.922 0 0);
   --input: oklch(0.922 0 0);
   --ring: oklch(0.708 0 0);
-
-  --hero-gradient: linear-gradient(
-    135deg,
-    hsl(240 5.9% 10%),
-    hsl(240 3.8% 15%)
-  );
-  --card-gradient: linear-gradient(135deg, hsl(0 0% 100%), hsl(240 4.8% 98%));
-  --accent-blue: oklch(57.9% 0.2497 257.07);
-  --accent-purple: hsl(262 83% 58%);
-  --accent-orange: hsl(25 95% 53%);
-  --surface-elevated: hsl(0 0% 98%);
-  --text-subtle: hsl(240 3.8% 46.1%);
-  --navbar-bg: hsl(0 0% 100%/80%);
-  --tool-card-bg: hsl(0 0% 100%);
-  --gallery-bg: hsl(240 4.8% 98%);
 }
 
 .dark {
@@ -92,21 +67,6 @@
   --border: oklch(1 0 0 / 10%);
   --input: oklch(1 0 0 / 15%);
   --ring: oklch(0.556 0 0);
-  --hero-gradient: linear-gradient(
-    135deg,
-    hsl(240 3.7% 15.9%),
-    hsl(240 5% 20%)
-  );
-  --card-gradient: linear-gradient(
-    135deg,
-    hsl(240 3.7% 15.9%),
-    hsl(240 5% 18%)
-  );
-  --surface-elevated: hsl(240 3.7% 15.9%);
-  --text-subtle: hsl(240 5% 64.9%);
-  --navbar-bg: hsl(240 10% 3.9%/80%);
-  --tool-card-bg: hsl(240 3.7% 15.9%);
-  --gallery-bg: hsl(240 5% 8%);
 }
 
 @font-face {

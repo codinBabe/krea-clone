@@ -117,7 +117,7 @@ export function ToolsGrid() {
                       background: tool.bg ?? "var(--accent)",
                     }}
                   >
-                    <Icon className="text-white" />
+                    <Icon />
                   </div>
 
                   <div className="flex-1 space-y-1">

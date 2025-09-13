@@ -1,10 +1,9 @@
-export const Home = (props: React.SVGProps<SVGSVGElement>) => (
+export const Home = () => (
   <svg
     width="24"
     height="24"
     viewBox="0 0 24 24"
     fill="none"
-    {...props}
     xmlns="http://www.w3.org/2000/svg"
   >
     <path
@@ -14,13 +13,12 @@ export const Home = (props: React.SVGProps<SVGSVGElement>) => (
   </svg>
 );
 
-export const ImageIcon = (props: React.SVGProps<SVGSVGElement>) => (
+export const ImageIcon = () => (
   <svg
     width="24"
     height="24"
     viewBox="0 0 24 24"
     fill="none"
-    {...props}
     xmlns="http://www.w3.org/2000/svg"
   >
     <path
@@ -49,14 +47,13 @@ export const ImageIcon = (props: React.SVGProps<SVGSVGElement>) => (
   </svg>
 );
 
-export const Video = (props: React.SVGProps<SVGSVGElement>) => (
+export const Video = () => (
   <svg
     width="24"
     height="24"
     viewBox="0 0 24 24"
     fill="none"
     xmlns="http://www.w3.org/2000/svg"
-    {...props}
   >
     <path
       fillRule="evenodd"
@@ -81,7 +78,7 @@ export const Video = (props: React.SVGProps<SVGSVGElement>) => (
   </svg>
 );
 
-export const MotionTransfer = (props: React.SVGProps<SVGSVGElement>) => (
+export const MotionTransfer = () => (
   <svg
     width="42"
     height="42"
@@ -100,13 +97,12 @@ export const MotionTransfer = (props: React.SVGProps<SVGSVGElement>) => (
   </svg>
 );
 
-export const Enhancer = (props: React.SVGProps<SVGSVGElement>) => (
+export const Enhancer = () => (
   <svg
     width="24"
     height="24"
     viewBox="0 0 24 24"
     fill="none"
-    {...props}
     xmlns="http://www.w3.org/2000/svg"
   >
     <path
@@ -154,7 +150,7 @@ export const Enhancer = (props: React.SVGProps<SVGSVGElement>) => (
   </svg>
 );
 
-export const Realtime = (props: React.SVGProps<SVGSVGElement>) => (
+export const Realtime = () => (
   <svg
     width="24"
     height="24"
@@ -180,13 +176,12 @@ export const Realtime = (props: React.SVGProps<SVGSVGElement>) => (
   </svg>
 );
 
-export const Edit = (props: React.SVGProps<SVGSVGElement>) => (
+export const Edit = () => (
   <svg
     width="24"
     height="24"
     viewBox="0 0 24 24"
     fill="none"
-    {...props}
     xmlns="http://www.w3.org/2000/svg"
   >
     <path
@@ -221,13 +216,12 @@ export const Edit = (props: React.SVGProps<SVGSVGElement>) => (
   </svg>
 );
 
-export const Asset = (props: React.SVGProps<SVGSVGElement>) => (
+export const Asset = () => (
   <svg
     width="24"
     height="24"
     viewBox="0 0 24 24"
     fill="currentColor"
-    {...props}
     xmlns="http://www.w3.org/2000/svg"
   >
     <path d="M3 5C3 4.45 3.45 4 4 4H9.17C9.58 4 9.95 4.21 10.14 4.55L10.86 5.89C11.05 6.23 11.42 6.44 11.83 6.44H20C20.55 6.44 21 6.89 21 7.44V11C21 11.55 20.55 12 20 12H4C3.45 12 3 11.55 3 11V5Z"></path>
