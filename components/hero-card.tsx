@@ -8,7 +8,6 @@ import { ChevronLeft, ChevronRight } from "lucide-react";
 const slides = [
   {
     id: 1,
-    type: "image",
     label: "NEW IMAGE MODEL",
     title: "WAN 2.2 Image generation",
     description:
@@ -18,24 +17,13 @@ const slides = [
   },
   {
     id: 2,
-    type: "video",
+
     label: "OPEN SOURCE MODEL",
     title: "FLUX.1 Krea",
     description:
       "We're making the weights to our FLUX.1 Krea model open-source. Download and run our model weights, read the technical report, or generate with it in Krea Image.",
     button: "Read Report",
-    src: "/images/flux-1.mp4",
-  },
-
-  {
-    id: 3,
-    type: "image",
-    label: "NEW IMAGE MODEL",
-    title: "Seedream 4.0",
-    description:
-      "Try the brand new and record-breaking image generation model Seedream 4.0 by ByteDance.",
-    button: "Start Generating",
-    src: "/images/seedream.webp",
+    src: "/images/flux.webp",
   },
 ];
 
@@ -60,21 +48,10 @@ export function HeroCards() {
             className="relative flex-shrink-0 w-[70%] md:w-[60%] h-[320px] md:h-[420px] mx-2 overflow-hidden border-0 text-white rounded-2xl"
           >
             {/* Background */}
-            {slide.type === "image" ? (
-              <div
-                className="absolute inset-0 bg-cover bg-center"
-                style={{ backgroundImage: `url(${slide.src})` }}
-              />
-            ) : (
-              <video
-                className="absolute inset-0 w-full h-full object-cover"
-                src={slide.src}
-                autoPlay
-                muted
-                loop
-                playsInline
-              />
-            )}
+            <div
+              className="absolute inset-0 bg-cover bg-center"
+              style={{ backgroundImage: `url(${slide.src})` }}
+            />
             <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent" />
 
             {/* Content */}
