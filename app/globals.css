@@ -24,6 +24,7 @@
   --color-ring: var(--ring);
   --radius: var(--radius);
   --font-sans: "Suiss-Regular", sans-serif;
+  --color-accent-blie: var(--accent-blue);
 }
 
 :root {
@@ -46,6 +47,7 @@
   --border: oklch(0.922 0 0);
   --input: oklch(0.922 0 0);
   --ring: oklch(0.708 0 0);
+  --accent-blue: oklch(57.9% 0.2497 257.07);
 }
 
 .dark {
@@ -67,6 +69,7 @@
   --border: oklch(1 0 0 / 10%);
   --input: oklch(1 0 0 / 15%);
   --ring: oklch(0.556 0 0);
+  --accent-blue: oklch(57.9% 0.2497 257.07);
 }
 
 @font-face {
