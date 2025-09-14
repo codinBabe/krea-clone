@@ -24,7 +24,7 @@
   --color-ring: var(--ring);
   --radius: var(--radius);
   --font-sans: "Suiss-Regular", sans-serif;
-  --color-accent-blie: var(--accent-blue);
+  --color-accent-blue: var(--accent-blue);
 }
 
 :root {
